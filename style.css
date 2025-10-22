@@ -1,6 +1,11 @@
 #header {
   background-image: url(assets/showcase.jpg);
 }
-#tutorials {
-  max-width: 396.8px;
+.tutorials {
+  max-width: 403px;
+}
+#medium {
+  font-size: small;
+  background-color: rgb(255, 109, 18);
+  padding: 5px;
 }
