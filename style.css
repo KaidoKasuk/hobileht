@@ -11,6 +11,16 @@
   background-color: rgb(255, 109, 18);
   padding: 5px;
 }
+#easy {
+  font-size: small;
+  background-color: green;
+  padding: 5px;
+}
+#hard {
+  font-size: small;
+  background-color: rgb(255, 0, 0);
+  padding: 5px;
+}
 #redstone-academy {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -19,6 +29,63 @@
 #redstone-engineering {
   color: red;
 }
-#browse {
-  text-decoration: none;
+
+.nav-tabs .nav-link {
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  transform: scale(1.05);
+  z-index: 1; /* make hovered tab above others */
+}
+
+/* Active tab styling */
+.nav-tabs .nav-link.active {
+  transform: scale(1.05); /* stays zoomed */
+  color: #fff; /* text color */
+}
+
+/* Custom active background per original border color */
+#nav-all-tab.active {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+#nav-iron-tab.active {
+  background-color: gray;
+  border-color: gray;
+  color: white;
+}
+
+#nav-gold-tab.active {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+#nav-enderman-tab.active {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+}
+
+#nav-3x3-tab.active {
+  background-color: #bb4d00;
+  border-color: #bb4d00;
+  color: white;
+}
+
+/* Optional: keep spacing between tabs consistent */
+.nav-tabs .nav-link {
+  margin: 0.25rem;
+}
+
+#watch-tutorial:hover {
+  box-shadow: 0 0 20px rgb(255, 87, 87);
+}
+
+.tutorial:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
 }

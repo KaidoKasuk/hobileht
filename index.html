@@ -62,21 +62,27 @@
         </div>
         <br />
         <div class="text-center">
-          <div class="text-center bg-danger d-inline-block p-3">
-            <a id="browse" href="category">Browse Tutorials</a>
+          <div class="text-center d-inline-block p-3">
+            <a
+              id="watch-tutorial"
+              class="btn text-center text-white bg-danger rounded-0"
+              href="#category"
+              >Browse Tutorials</a
+            >
           </div>
         </div>
       </div>
     </section>
+    <hr class="text-white p-0 m-0" />
 
-    <section id="category" class="pt-3">
-      <div class="text-center py-2">Search by Category</div>
+    <section id="category" class="p-2">
+      <div class="text-center text-white py-3">Search by Category</div>
     </section>
 
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <nav class="nav justify-content-center text-center">
+      <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
         <button
-          class="nav-link active"
+          class="nav-link active border border-danger rounded-0"
           id="nav-all-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-all"
@@ -85,11 +91,11 @@
           aria-controls="nav-all"
           aria-selected="true"
         >
-          all
+          all Tutorials
         </button>
 
         <button
-          class="nav-link"
+          class="nav-link rounded-0 border border-gray"
           id="nav-iron-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-iron"
@@ -102,7 +108,7 @@
         </button>
 
         <button
-          class="nav-link"
+          class="nav-link rounded-0 border border-danger"
           id="nav-gold-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-gold"
@@ -113,47 +119,67 @@
         >
           Gold farms
         </button>
+
+        <button
+          class="nav-link rounded-0 border border-purple"
+          id="nav-enderman-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-enderman"
+          type="button"
+          role="tab"
+          aria-controls="nav-enderman"
+          aria-selected="false"
+        >
+          Enderman farms
+        </button>
+        <button
+          class="nav-link rounded-0 border border-brown"
+          id="nav-3x3-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-3x3"
+          type="button"
+          role="tab"
+          aria-controls="nav-3x3"
+          aria-selected="false"
+        >
+          3x3 piston doors
+        </button>
       </div>
     </nav>
 
-    <hr />
+    <hr class="text-light" />
 
-    <!-- Tutorials -->
-
-    <h2>All Tutorials</h2>
-    <div class="pb-4">X tutorials found</div>
-    <!-- flex -->
+    <!-- tutorials -->
     <div class="d-flex justify-content-center">
-      <!-- 3x3 -->
       <div
-        class="d-none tab-pane tab-iron d-flex justify-content-center fade show active p-3"
+        class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-iron"
         role="tabpanel"
         aria-labelledby="nav-iron-tab"
       >
         <section class="tutorials">
-          <div id="3x3" class="border border-3 border-dark bg-warning">
+          <div id="3x3" class="border border-3 border-gray">
             <iframe
               width="396.8"
               height="223.2"
-              src="https://www.youtube.com/embed/IMM93WydBSw?si=uR7myQXMrS7Z3CJB"
+              src="https://www.youtube.com/embed/MMsYeKntoEI?si=gKHa_We6d3zdnZU-"
             >
             </iframe>
             <div class="p-2">
-              <h3>
-                IRON?????3x3 Piston Door - Compact Design
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
+              <h3 class="text-white">
+                3 Villager Iron Farm - 350+ Per Hour
+                <label class="border border-0" id="easy">Easy</label>
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
+              <p class="text-lighter-gray">
+                This Iron Farm Produces 350 Iron Per Hour With Just 3 Villagers,
+                Really Easy to Build and Includes a tutorial on how to get the
+                zombie in without using a minecart. Built in Minecraft 1.16
+                <br />
+                <br />
+                <br />
               </p>
             </div>
-            <div class="p-2">
+            <div class="p-2 text-white">
               <h4>Required Materials:</h4>
               <div>sticky Pistons (6)</div>
               <div>Redstone dust (34)</div>
@@ -161,41 +187,48 @@
               <div>Stone blocks torches (6)</div>
             </div>
             <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
+              <a
+                href="https://www.youtube.com/embed/MMsYeKntoEI?si=0cUyzFAxEk6T6xBj"
+                target="_blank"
+                id="watch-tutorial"
+                class="btn text-center text-white bg-danger rounded-0"
+              >
+                Watch Tutorial
+              </a>
             </div>
           </div>
         </section>
       </div>
       <!--  -->
       <div
-        class="tab-pane tab-gold d-flex justify-content-center fade show active p-3"
+        class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-gold"
         role="tabpanel"
         aria-labelledby="nav-gold-tab"
       >
         <section class="tutorials">
-          <div id="3x3" class="border border-3 border-dark bg-warning">
+          <div id="3x3" class="border border-3 border-gray">
             <iframe
               width="396.8"
               height="223.2"
-              src="https://www.youtube.com/embed/IMM93WydBSw?si=uR7myQXMrS7Z3CJB"
+              src="https://www.youtube.com/embed/twL1dt1gOP0?si=WWDWYlosOQTPJTlI"
             >
             </iframe>
             <div class="p-2">
-              <h3>
-                GOLD
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
+              <h3 class="text-white">
+                Gold/XP Farm - 1200+ Ingots per Hour
+                <label class="border border-0" id="hard">Hard</label>
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
+              <p class="text-lighter-gray">
+                This Zombie Pigman Gold Farm Generates over 130 Gold Blocks per
+                hour in Minecraft 1.20+ Over 115,000 XP points per hour, which
+                get's you from level 0-30 in just 25 seconds!
+                <br />
+                <br />
+                <br />
               </p>
             </div>
-            <div class="p-2">
+            <div class="p-2 text-white">
               <h4>Required Materials:</h4>
               <div>sticky Pistons (6)</div>
               <div>Redstone dust (34)</div>
@@ -203,17 +236,141 @@
               <div>Stone blocks torches (6)</div>
             </div>
             <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
+              <a
+                href="https://www.youtube.com/embed/twL1dt1gOP0?si=WWDWYlosOQTPJTlI"
+                target="_blank"
+                id="watch-tutorial"
+                class="btn text-center text-white bg-danger rounded-0"
+              >
+                Watch Tutorial
+              </a>
             </div>
           </div>
         </section>
       </div>
+      <!--  -->
+      <div
+        class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
+        id="nav-enderman"
+        role="tabpanel"
+        aria-labelledby="nav-enderman-tab"
+      >
+        <section class="tutorials">
+          <div id="3x3" class="border border-3 border-gray">
+            <iframe
+              width="396.8"
+              height="223.2"
+              src="https://www.youtube.com/embed/zgFMPbPcOQ0?si=pgXDk5u_qzQmsnON"
+            >
+            </iframe>
+            <div class="p-2">
+              <h3 class="text-white">
+                Effortless Enderman XP Farm 1.20, 1.21+
+
+                <label class="border border-0" id="medium">Medium</label>
+              </h3>
+              <p class="text-lighter-gray">
+                TToday I'll show you how to build the cheapest enderman xp farm
+                possible with a block by block tutorial. This enderman farm will
+                take you around 15 minutes to gather the materials for and
+                around 15 minutes to build and will then get you max xp per hour
+              </p>
+            </div>
+            <div class="p-2 text-white">
+              <h4>Required Materials:</h4>
+              <div>sticky Pistons (6)</div>
+              <div>Redstone dust (34)</div>
+              <div>Redstone torches (6)</div>
+              <div>Stone blocks torches (6)</div>
+            </div>
+            <div class="d-flex justify-content-center p-2">
+              <a
+                href="https://www.youtube.com/embed/zgFMPbPcOQ0?si=pgXDk5u_qzQmsnON"
+                target="_blank"
+                id="watch-tutorial"
+                class="btn text-center text-white bg-danger rounded-0"
+              >
+                Watch Tutorial
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--  -->
+      <div
+        class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
+        id="nav-3x3"
+        role="tabpanel"
+        aria-labelledby="nav-3x3-tab"
+      >
+        <section class="tutorials">
+          <div id="3x3" class="border border-3 border-gray">
+            <iframe
+              width="396.8"
+              height="223.2"
+              src="https://www.youtube.com/embed/--LUl8BR-1U?si=TH3D9BQJ3Ld1LU2i"
+            >
+            </iframe>
+            <div class="p-2">
+              <h3 class="text-white">
+                The BEST 3x3 Spiral Door In Minecraft (Not Clickbait)
+                <label class="border border-0" id="medium">Medium</label>
+              </h3>
+              <p class="text-lighter-gray">
+                Today I show you the BEST 3x3 spiral piston door that has a
+                perfect spiral animation with no timing inconsistencies
+                <br />
+                <br />
+                <br />
+                <br />
+              </p>
+            </div>
+            <div class="p-2 text-white">
+              <h4>Required Materials:</h4>
+              <div>sticky Pistons (6)</div>
+              <div>Redstone dust (34)</div>
+              <div>Redstone torches (6)</div>
+              <div>Stone blocks torches (6)</div>
+            </div>
+            <div class="d-flex justify-content-center p-2">
+              <a
+                href="https://www.youtube.com/embed/--LUl8BR-1U?si=TH3D9BQJ3Ld1LU2i"
+                target="_blank"
+                id="watch-tutorial"
+                class="btn text-center text-white bg-danger rounded-0"
+              >
+                Watch Tutorial
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--  -->
     </div>
     <!-- footer -->
-    <section class="p-4 text-center bg-dark text-primary">
-      <div>Redstone Academy</div>
-      <div>Use redstone tutorials picked by me on Youtube</div>
-      <div>
+    <hr class="text-danger p-0 m-0" />
+    <section class="p-4 bg-black text-center text-white">
+      <!-- Header with red square and text -->
+      <div class="d-flex align-items-center justify-content-center mb-2">
+        <!-- Red square -->
+        <div
+          style="
+            width: 32px;
+            height: 32px;
+            background: #b30000;
+            border-radius: 1px;
+          "
+        ></div>
+
+        <!-- Text -->
+        <span class="fs-5 fw-semibold p-2">Redstone Academy</span>
+      </div>
+
+      <!-- Subtitle -->
+      <div class="mb-2">Use redstone tutorials picked by me on YouTube</div>
+
+      <!-- Footer / copyright -->
+      <div class="small p-3">
         © 2025 Redstone Academy. Not affiliated with Mojang or Microsoft.
       </div>
     </section>

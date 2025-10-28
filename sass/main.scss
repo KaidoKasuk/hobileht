@@ -1,9 +1,16 @@
 $primary: #ffffff;
+$dark: #1e1e1e;
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 $custom-theme-colors: (
   "darker": #323232,
+  "gray": #6a7282,
+  "light-gray": #2a2a2a,
+  "lighter-gray": #99a1af,
+  "brown": #bb4d00,
+  "purple": #9810fa,
+  "black": #000000,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
