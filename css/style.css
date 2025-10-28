@@ -1,6 +1,6 @@
 #header {
   background-image: url(../assets/heropicture.png);
-  height: 100vh; /* Full screen */
+  height: 100vh;
   width: 100%;
 }
 .tutorials {
@@ -36,16 +36,14 @@
 
 .nav-tabs .nav-link:hover {
   transform: scale(1.05);
-  z-index: 1; /* make hovered tab above others */
+  z-index: 1;
 }
 
-/* Active tab styling */
 .nav-tabs .nav-link.active {
-  transform: scale(1.05); /* stays zoomed */
-  color: #fff; /* text color */
+  transform: scale(1.05);
+  color: #fff;
 }
 
-/* Custom active background per original border color */
 #nav-all-tab.active {
   background-color: red;
   border-color: red;
@@ -76,7 +74,6 @@
   color: white;
 }
 
-/* Optional: keep spacing between tabs consistent */
 .nav-tabs .nav-link {
   margin: 0.25rem;
 }
