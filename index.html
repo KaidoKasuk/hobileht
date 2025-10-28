@@ -5,120 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobileht</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-light p-2 sticky-top">
-      <div>
-        <i class="bi bi-app"></i>
-        <a href="#">Redstone Academy</a>
+  <body class="bg-dark">
+    <nav class="align-items-left bg-darker p-2 sticky-top">
+      <div class="container d-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <!-- ruut -->
+          <div
+            class="me-2"
+            style="
+              width: 32px;
+              height: 32px;
+              background: #b30000;
+              border-radius: 1px;
+            "
+          ></div>
+
+          <!-- Text -->
+          <span class="text-white fs-5 fw-semibold">Redstone Academy</span>
+        </div>
       </div>
     </nav>
 
-    <section id="header">
-      <div class="container py-5">
-        <div class="text-center">REDSTONE ENGINEERING</div>
+    <section
+      id="header"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div>
+        <div class="text-center p-3 align-middle">
+          <div
+            class="border border-1 d-inline-block px-4 py-2 fw-bold border-danger text-danger fs-5"
+            style="background-color: rgba(255, 0, 0, 0.2)"
+          >
+            REDSTONE ENGINEERING
+          </div>
+        </div>
+
         <br />
-        <div class="text-center">Master Redstone in Minecraft</div>
-        <br />
-        <div class="text-center">
+        <p class="text-center fw-bold text-primary">
+          Master Redstone in Minecraft
+        </p>
+
+        <div class="text-center text-primary p-3">
           Learn to build amazing contraptions with our comprehensive collection
-          of Redstone tutorials, from beginner-friendly builds to advanced
+          of <br />Redstone tutorials, from beginner-friendly builds to advanced
           automation systems.
         </div>
         <br />
-        <div class="text-center"><a href="category">Browse tutorials</a></div>
+        <div class="text-center">
+          <div class="text-center bg-danger d-inline-block p-3">
+            <a id="browse" href="category">Browse Tutorials</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="category" class="pt-3">
       <div class="text-center py-2">Search by Category</div>
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-center gap-2">
-          <a
-            class="btn btn-primary"
-            data-bs-toggle="collapse"
-            href="#iron"
-            role="button"
-            aria-expanded="false"
-            aria-controls="iron"
-            >iron</a
-          >
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#gold"
-            aria-expanded="false"
-            aria-controls="gold"
-          >
-            gold
-          </button>
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#enderman"
-            aria-expanded="false"
-            aria-controls="enderman"
-          >
-            enderman
-          </button>
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#3x3"
-            aria-expanded="false"
-            aria-controls="3x3"
-          >
-            3x3
-          </button>
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target=".multi-collapse"
-            aria-expanded="false"
-            aria-controls="iron gold 3x3 enderman"
-          >
-            Toggle both elements
-          </button>
-        </div>
-      </div>
-      <hr />
     </section>
+
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-all-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-all"
+          type="button"
+          role="tab"
+          aria-controls="nav-all"
+          aria-selected="true"
+        >
+          all
+        </button>
+
+        <button
+          class="nav-link"
+          id="nav-iron-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-iron"
+          type="button"
+          role="tab"
+          aria-controls="nav-iron"
+          aria-selected="false"
+        >
+          Iron farms
+        </button>
+
+        <button
+          class="nav-link"
+          id="nav-gold-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-gold"
+          type="button"
+          role="tab"
+          aria-controls="nav-gold"
+          aria-selected="false"
+        >
+          Gold farms
+        </button>
+      </div>
+    </nav>
+
+    <hr />
 
     <!-- Tutorials -->
-    <section class="p-2">
-      <h2>All Tutorials</h2>
-      <div class="pb-4">X tutorials found</div>
 
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-center gap-2">
-          <!-- category1 -->
-          <div
-            id="3x3"
-            class="border border-3 border-dark bg-warning collapse multi-collapse tutorials all-tutorials"
-          >
+    <h2>All Tutorials</h2>
+    <div class="pb-4">X tutorials found</div>
+    <!-- flex -->
+    <div class="d-flex justify-content-center">
+      <!-- 3x3 -->
+      <div
+        class="d-none tab-pane tab-iron d-flex justify-content-center fade show active p-3"
+        id="nav-iron"
+        role="tabpanel"
+        aria-labelledby="nav-iron-tab"
+      >
+        <section class="tutorials">
+          <div id="3x3" class="border border-3 border-dark bg-warning">
             <iframe
               width="396.8"
               height="223.2"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              src="https://www.youtube.com/embed/IMM93WydBSw?si=uR7myQXMrS7Z3CJB"
             >
             </iframe>
             <div class="p-2">
               <h3>
-                3x3 Piston Door - Compact Design
+                IRON?????3x3 Piston Door - Compact Design
                 <label class="border border-3 border-dark" id="medium"
                   >Medium</label
                 >
@@ -141,193 +164,51 @@
               <button class="btn text-center">Watch Tutorial</button>
             </div>
           </div>
-          <!--  -->
-          <div
-            id="iron"
-            class="border border-3 border-dark bg-warning collapse multi-collapse tutorials"
-          >
-            <iframe
-              width="396.8"
-              height="223.2"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="p-2">
-              <h3>
-                IRON FARM EASY
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
-              </p>
-            </div>
-            <div class="p-2">
-              <h4>Required Materials:</h4>
-              <div>sticky Pistons (6)</div>
-              <div>Redstone dust (34)</div>
-              <div>Redstone torches (6)</div>
-              <div>Stone blocks torches (6)</div>
-            </div>
-            <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
-            </div>
-          </div>
-
-          <!--  -->
-          <!--  -->
-          <div
-            id="gold"
-            class="border border-3 border-dark bg-warning collapse multi-collapse tutorials"
-          >
-            <iframe
-              width="396.8"
-              height="223.2"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="p-2">
-              <h3>
-                GOLD FARM EASY
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
-              </p>
-            </div>
-            <div class="p-2">
-              <h4>Required Materials:</h4>
-              <div>sticky Pistons (6)</div>
-              <div>Redstone dust (34)</div>
-              <div>Redstone torches (6)</div>
-              <div>Stone blocks torches (6)</div>
-            </div>
-            <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
-            </div>
-          </div>
-          <!--  -->
-          <div
-            id="enderman"
-            class="border border-3 border-dark bg-warning collapse multi-collapse tutorials"
-          >
-            <iframe
-              width="396.8"
-              height="223.2"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="p-2">
-              <h3>
-                ENDERMAN FARM EASY
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
-              </p>
-            </div>
-            <div class="p-2">
-              <h4>Required Materials:</h4>
-              <div>sticky Pistons (6)</div>
-              <div>Redstone dust (34)</div>
-              <div>Redstone torches (6)</div>
-              <div>Stone blocks torches (6)</div>
-            </div>
-            <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
-            </div>
-          </div>
-          <!--  -->
-          <div
-            id="iron"
-            class="border border-3 border-dark bg-warning collapse multi-collapse tutorials"
-          >
-            <iframe
-              width="396.8"
-              height="223.2"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="p-2">
-              <h3>
-                IRON FARM MEDIUM
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
-              </p>
-            </div>
-            <div class="p-2">
-              <h4>Required Materials:</h4>
-              <div>sticky Pistons (6)</div>
-              <div>Redstone dust (34)</div>
-              <div>Redstone torches (6)</div>
-              <div>Stone blocks torches (6)</div>
-            </div>
-            <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
-            </div>
-          </div>
-          <!--  -->
-          <div
-            id="gold"
-            class="border border-3 border-dark bg-warning collapse multi-collapse tutorials"
-          >
-            <iframe
-              width="396.8"
-              height="223.2"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="p-2">
-              <h3>
-                GOLD FARM MEDIUM
-                <label class="border border-3 border-dark" id="medium"
-                  >Medium</label
-                >
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                aliquam, ratione sunt tempora qui doloremque ipsum minima,
-                reiciendis accusantium, quam corporis ut neque repudiandae vel
-                nostrum recusandae tenetur culpa repellat!
-              </p>
-            </div>
-            <div class="p-2">
-              <h4>Required Materials:</h4>
-              <div>sticky Pistons (6)</div>
-              <div>Redstone dust (34)</div>
-              <div>Redstone torches (6)</div>
-              <div>Stone blocks torches (6)</div>
-            </div>
-            <div class="d-flex justify-content-center p-2">
-              <button class="btn text-center">Watch Tutorial</button>
-            </div>
-          </div>
-          <!--  -->
-        </div>
+        </section>
       </div>
       <!--  -->
-    </section>
+      <div
+        class="tab-pane tab-gold d-flex justify-content-center fade show active p-3"
+        id="nav-gold"
+        role="tabpanel"
+        aria-labelledby="nav-gold-tab"
+      >
+        <section class="tutorials">
+          <div id="3x3" class="border border-3 border-dark bg-warning">
+            <iframe
+              width="396.8"
+              height="223.2"
+              src="https://www.youtube.com/embed/IMM93WydBSw?si=uR7myQXMrS7Z3CJB"
+            >
+            </iframe>
+            <div class="p-2">
+              <h3>
+                GOLD
+                <label class="border border-3 border-dark" id="medium"
+                  >Medium</label
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                aliquam, ratione sunt tempora qui doloremque ipsum minima,
+                reiciendis accusantium, quam corporis ut neque repudiandae vel
+                nostrum recusandae tenetur culpa repellat!
+              </p>
+            </div>
+            <div class="p-2">
+              <h4>Required Materials:</h4>
+              <div>sticky Pistons (6)</div>
+              <div>Redstone dust (34)</div>
+              <div>Redstone torches (6)</div>
+              <div>Stone blocks torches (6)</div>
+            </div>
+            <div class="d-flex justify-content-center p-2">
+              <button class="btn text-center">Watch Tutorial</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- footer -->
     <section class="p-4 text-center bg-dark text-primary">
       <div>Redstone Academy</div>
@@ -336,10 +217,6 @@
         © 2025 Redstone Academy. Not affiliated with Mojang or Microsoft.
       </div>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

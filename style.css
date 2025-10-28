@@ -1,5 +1,7 @@
 #header {
-  background-image: url(assets/showcase.jpg);
+  background-image: url(assets/heropicture.png);
+  height: 100vh; /* Full screen */
+  width: 100%;
 }
 .tutorials {
   max-width: 403px;
@@ -8,4 +10,15 @@
   font-size: small;
   background-color: rgb(255, 109, 18);
   padding: 5px;
+}
+#redstone-academy {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#redstone-engineering {
+  color: red;
+}
+#browse {
+  text-decoration: none;
 }
