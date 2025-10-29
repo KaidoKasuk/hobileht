@@ -15,11 +15,15 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-dark">
     <nav class="align-items-left bg-darker p-2 sticky-top">
-      <div class="container d-flex align-items-center">
-        <div class="d-flex align-items-center">
+      <div class="container d-flex align-items-center" id="header-nav">
+        <div class="d-flex align-items-center header-nav">
           <!-- ruut -->
           <div
             class="me-2"
@@ -44,26 +48,26 @@
       <div>
         <div class="text-center p-3 align-middle">
           <div
-            class="border border-1 d-inline-block px-4 py-2 fw-bold border-danger text-danger fs-5"
-            style="background-color: rgba(255, 0, 0, 0.2)"
+            class="border border-1 d-inline-block px-4 py-2 fw-bold border-danger text-danger fs-6"
+            style="background-color: rgba(255, 0, 0, 0.1)"
           >
             REDSTONE ENGINEERING
           </div>
         </div>
 
-        <br />
-        <p class="text-center fw-bold text-primary">
+        <p class="text-center text-primary fs-4">
           Master Redstone in Minecraft
         </p>
 
-        <div class="text-center text-primary p-3">
-          Learn to build amazing contraptions with our comprehensive collection
-          of <br />Redstone tutorials, from beginner-friendly builds to advanced
-          automation systems.
+        <div id="hero-text" class="text-center text-primary">
+          <p class="text-center text-shadow-lg text-primary p-2">
+            Learn to build amazing contraptions with our comprehensive
+            collection of <br />Redstone tutorials, from beginner-friendly
+            builds to advanced automation systems.
+          </p>
         </div>
-        <br />
         <div class="text-center">
-          <div class="text-center d-inline-block p-3">
+          <div class="text-center d-inline-block pt-5">
             <a
               id="watch-tutorial"
               class="btn text-center text-white bg-danger rounded-0"
@@ -74,8 +78,7 @@
         </div>
       </div>
     </section>
-    <hr class="text-white p-0 m-0" />
-
+    <div class="colorful-hr">_</div>
     <section id="category" class="p-2">
       <div class="text-center text-white py-3">Search by Category</div>
     </section>
@@ -92,6 +95,42 @@
           aria-controls="nav-all"
           aria-selected="true"
         >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6667 10.8334L4.68251 17.8167C4.51836 17.9809 4.32347 18.1112 4.10897 18.2001C3.89448 18.2889 3.66457 18.3347 3.43239 18.3347C2.96347 18.3348 2.51372 18.1486 2.18209 17.8171C1.85046 17.4856 1.66411 17.0359 1.66403 16.567C1.66395 16.0981 1.85016 15.6483 2.18168 15.3167L9.16668 8.33252"
+              stroke="#D1D5DC"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.3108 3.35587C12.0773 2.57185 10.6978 2.04555 9.2555 1.80868C7.81319 1.5718 6.33786 1.62924 4.91834 1.97753C3.75334 2.26253 4.00834 3.77587 5.14917 4.14503C6.89467 4.71084 8.53417 5.5624 10.0008 6.66503"
+              stroke="#D1D5DC"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.3341 9.99912C14.4369 11.4663 15.2885 13.1064 15.8541 14.8525C16.2241 15.9933 17.7375 16.2491 18.0233 15.0841C18.3702 13.671 18.4289 12.2024 18.1958 10.7661C17.9627 9.32972 17.4426 7.95506 16.6666 6.72412"
+              stroke="#D1D5DC"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.2933 2.79333C15.105 2.60504 14.8496 2.49927 14.5833 2.49927C14.3171 2.49927 14.0617 2.60504 13.8733 2.79333L9.46002 7.20666C9.27173 7.39497 9.16595 7.65037 9.16595 7.91666C9.16595 8.18296 9.27173 8.43835 9.46002 8.62666L11.3733 10.54C11.5617 10.7283 11.8171 10.8341 12.0833 10.8341C12.3496 10.8341 12.605 10.7283 12.7933 10.54L17.2067 6.12666C17.395 5.93835 17.5007 5.68296 17.5007 5.41666C17.5007 5.15037 17.395 4.89497 17.2067 4.70666L15.2933 2.79333Z"
+              stroke="#D1D5DC"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
           all Tutorials
         </button>
 
@@ -151,7 +190,7 @@
     <hr class="text-light" />
 
     <!-- tutorials -->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex align-content-start flex-wrap justify-content-center">
       <div
         class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-iron"
