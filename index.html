@@ -84,12 +84,13 @@
     </section>
 
     <nav class="nav justify-content-center text-center">
-      <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+      <div class="nav nav-tabs border-0">
         <button
-          class="nav-link active border border-danger rounded-0"
+          data-category="all"
+          class="tab-btn nav-link active border border-danger rounded-0"
           id="nav-all-tab"
           data-bs-toggle="tab"
-          data-bs-target="#nav-all"
+          data-bs-target=""
           type="button"
           role="tab"
           aria-controls="nav-all"
@@ -135,10 +136,11 @@
         </button>
 
         <button
-          class="nav-link rounded-0 border border-gray"
+          data-category="iron"
+          class="tab-btn nav-link rounded-0 border border-gray"
           id="nav-iron-tab"
           data-bs-toggle="tab"
-          data-bs-target="#nav-iron"
+          data-bs-target=""
           type="button"
           role="tab"
           aria-controls="nav-iron"
@@ -148,10 +150,11 @@
         </button>
 
         <button
-          class="nav-link rounded-0 border border-danger"
+          data-category="gold"
+          class="tab-btn nav-link rounded-0 border border-danger"
           id="nav-gold-tab"
           data-bs-toggle="tab"
-          data-bs-target="#nav-gold"
+          data-bs-target=""
           type="button"
           role="tab"
           aria-controls="nav-gold"
@@ -161,10 +164,11 @@
         </button>
 
         <button
-          class="nav-link rounded-0 border border-purple"
+          data-category="enderman"
+          class="tab-btn nav-link rounded-0 border border-purple"
           id="nav-enderman-tab"
           data-bs-toggle="tab"
-          data-bs-target="#nav-enderman"
+          data-bs-target=""
           type="button"
           role="tab"
           aria-controls="nav-enderman"
@@ -173,10 +177,11 @@
           Enderman farms
         </button>
         <button
-          class="nav-link rounded-0 border border-brown"
+          data-category="3x3"
+          class="tab-btn nav-link rounded-0 border border-brown"
           id="nav-3x3-tab"
           data-bs-toggle="tab"
-          data-bs-target="#nav-3x3"
+          data-bs-target=""
           type="button"
           role="tab"
           aria-controls="nav-3x3"
@@ -190,8 +195,12 @@
     <hr class="text-light" />
 
     <!-- tutorials -->
-    <div class="d-flex align-content-start flex-wrap justify-content-center">
+    <div
+      class="d-flex align-content-start flex-wrap justify-content-center"
+      id="tutorial-container"
+    >
       <div
+        data-category="iron"
         class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-iron"
         role="tabpanel"
@@ -241,6 +250,7 @@
       </div>
       <!--  -->
       <div
+        data-category="gold"
         class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-gold"
         role="tabpanel"
@@ -290,6 +300,7 @@
       </div>
       <!--  -->
       <div
+        data-category="enderman"
         class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-enderman"
         role="tabpanel"
@@ -338,6 +349,7 @@
       </div>
       <!--  -->
       <div
+        data-category="3x3"
         class="tab-pane tab-iron d-flex justify-content-center fade show active p-3 tutorial"
         id="nav-3x3"
         role="tabpanel"
@@ -415,5 +427,6 @@
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
